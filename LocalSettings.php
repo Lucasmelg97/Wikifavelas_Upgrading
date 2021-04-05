@@ -179,7 +179,7 @@ wfLoadSkin( 'Tweeki' );
 # to LocalSettings.php. Check specific extension documentation for more details.
 # The following extensions were automatically enabled:
 
-wfLoadExtension( 'Bootstrap');
+wfLoadExtension( 'Bootstrap4');
 ## Bootstrap3 for Tweeki Theme
 $wgTweekiSkinUseBootstrapTheme = false;
 
