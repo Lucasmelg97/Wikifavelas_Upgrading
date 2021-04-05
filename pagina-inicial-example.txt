@@ -1,0 +1,50 @@
+<strong>O MediaWiki foi instalado com sucesso.</strong>
+
+Consulte o [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents Manual de Usuário] para informações de como usar o software wiki.
+
+== Começando na Wikifavelas==
+
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Lista de opções de configuração]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ FAQ do MediaWiki]
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce Lista de discussão com avisos de novas versões do MediaWiki]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources Traduza o MediaWiki para seu idioma]
+
+
+== Como ajudar as favelas em tempos de coronavírus ==
+
+
+<div class="flex-row row">
+<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+<div class="card shadow-lg border-0">
+<div class="card-img-top">[[Arquivo:image1.jpg|class=img-fluid| link=Apoie_as_favelas_na_luta_contra_o_Coronavírus]]
+</div>
+<div class="panel-footer btn-eixo1">Apoie às favelas nessa luta </div>
+</div><!-- End of pan -->
+</div><!-- end of col 1-->
+
+<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+<div class="card shadow-lg border-0">
+<div class="card-img-top">[[Arquivo:image2.jpg|class=img-fluid| link=Outros_mapeamentos_de_forma_de_ajudar_favelas]]  
+</div>
+<div class="panel-footer btn-eixo2">Mapeamento das formas de apoio</div>
+</div><!-- End of pan -->
+</div><!-- End of col 2-->
+
+<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+<div class="card shadow-lg border-0">
+<div class="card-img-top">[[Arquivo:Colorized_transmission_electron_micrograph_of_Avian_influenza_A_H5N1_viruses.jpg|class=img-fluid| link=Prestação_de_conta_dos_moradores_sobre_doações_contra_o_coronavírus]] 
+</div>
+<div class="panel-footer btn-eixo3">Prestação de Contas
+</div>
+</div><!-- End of pan -->
+</div><!-- End of col 3-->
+
+<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+<div class="card shadow-lg border-0">
+<div class="card-img-top">[[Arquivo:Gull portrait ca usa.jpg|class=img-fluid| link=Help_the_favelas_fight_Covid19]] 
+</div>
+<div class="panel-footer btn-eixo4">To help the favelas fight coronavírus</div>
+</div><!-- End of pan -->
+</div><!-- End of col 4-->
+
+</div><!-- End of row 1-->
