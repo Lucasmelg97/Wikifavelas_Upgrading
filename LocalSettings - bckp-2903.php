@@ -54,7 +54,7 @@ $wgEmailAuthentication = true;
 //$wgDBtype = "mysql";
 //$wgDBserver = "localhost";
 $wgDBname = "";
-$wgDBuser = "wikifavelas";
+$wgDBuser = "";
 $wgDBpassword = "";
 
 # MySQL specific settings
