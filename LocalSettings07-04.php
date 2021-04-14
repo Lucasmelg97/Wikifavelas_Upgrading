@@ -29,7 +29,7 @@ $wgSitename = "WikiFavelas";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://homologacao.wikifavelas.local";
+$wgServer = "http://wikifavelas.local";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -52,7 +52,7 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "localhost";
+$wgDBserver = "";
 $wgDBname = "";
 $wgDBuser = "";
 $wgDBpassword = "";
@@ -68,7 +68,7 @@ $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
 $wgSharedTables[] = "actor";
 
 ## Shared memory settings
-$wgMainCacheType = CACHE_ACCEL;
+$wgMainCacheType = CACHE_NONE;
 $wgMemCachedServers = [];
 
 ## To enable image uploads, make sure the 'images' directory
@@ -76,11 +76,9 @@ $wgMemCachedServers = [];
 $wgEnableUploads = true;
 #$wgUseImageMagick = true;
 #$wgImageMagickConvertCommand = "/usr/bin/convert";
-$wgUploadDirectory="images/output";
-$wgUploadPath="images/input";
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
-$wgUseInstantCommons = true;
+$wgUseInstantCommons = false;
 
 # Periodically send a pingback to https://www.mediawiki.org/ with basic data
 # about this MediaWiki instance. The Wikimedia Foundation shares this data
@@ -103,14 +101,14 @@ $wgShellLocale = "C.UTF-8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "pt-br";
 
-$wgSecretKey = "92236852a2e9873ee752663ab7660bacfd9bb3a171356aea4c12a2d1df77d6fa";
+$wgSecretKey = "634d6388adcd48770d42d3209201dd8c91f85272e9d1b0b03e40e67fbf63649b";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "3477e65ceb56a616";
+$wgUpgradeKey = "8f36ec4a2ce6fd87";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -125,68 +123,20 @@ $wgDiff3 = "/usr/bin/diff3";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
+$wgDefaultSkin = "tweeki";
 
-
-$wgDefaultSkin='tweeki';
-// wfLoadSkin( 'Pivot' );
-// $wgPivotFeatures = array(
-// 	'showActionsForAnon' => true,
-// 	'fixedNavBar' => false,
-// 	'usePivotTabs' => false,
-// 	'showHelpUnderTools' => true,
-// 	'showRecentChangesUnderTools' => true,
-// 	'wikiName' => &$GLOBALS['wgSitename'],
-// 	'wikiNameDesktop' => &$GLOBALS['wgSitename'],
-// 	'navbarIcon' => false,
-// 	'preloadFontAwesome' => false,
-// 	'showFooterIcons' => true,
-// 	'addThisPUBID' => '',
-// 	'useAddThisShare' => '',
-// 	'useAddThisFollow' => ''
-// );
-$wgAllowSiteCSSOnRestrictedPages = true;
-$wgAllowUserCss = true;
-
-## Skin preferences
-$wgHiddenPrefs[] = 'skin';
 # Enabled skins.
 # The following skins were automatically enabled:
-//wfLoadSkin( 'MonoBook' );
-//wfLoadSkin( 'Timeless' );
-//wfLoadSkin( 'Vector' );
+wfLoadSkin( 'MonoBook' );
+wfLoadSkin( 'Timeless' );
+wfLoadSkin( 'Vector' );
 wfLoadSkin( 'Tweeki' );
-///***Foreground */
-// wfLoadSkin('Foreground');
-// $wgDefaultSkin = "foreground";
-// $wgForegroundFeatures = array(      
-// 	'showActionsForAnon' => true,
-// 	'NavWrapperType' => 'divonly',
-// 	'showHelpUnderTools' => true,
-// 	'showRecentChangesUnderTools' => true,
-// 	'enableTabs' => false,
-// 	'wikiName' => &$GLOBALS['wgSitename'],
-// 	'navbarIcon' => false,
-// 	'IeEdgeCode' => 1,
-// 	'showFooterIcons' => false,
-// 	'addThisPUBID' => '',
-// 	'useAddThisShare' => '',
-// 	'useAddThisFollow' => ''
-//   );
 
 
 # Enabled extensions. Most of the extensions are enabled by adding
 # wfLoadExtension( 'ExtensionName' );
 # to LocalSettings.php. Check specific extension documentation for more details.
 # The following extensions were automatically enabled:
-
-wfLoadExtension( 'Bootstrap4');
-## Bootstrap3 for Tweeki Theme
-$wgTweekiSkinUseBootstrapTheme = false;
-
-## Use Bootstrap4 for Tweeki Theme
-$wgTweekiSkinUseBootstrap4 = true;
-//wfLoadSkin( 'Chameleon' );
-//$wgDefaultSkin='chameleon';
 wfLoadExtension( 'CategoryTree' );
 wfLoadExtension( 'Cite' );
 wfLoadExtension( 'CiteThisPage' );
@@ -214,13 +164,45 @@ wfLoadExtension( 'TemplateData' );
 wfLoadExtension( 'TextExtracts' );
 wfLoadExtension( 'TitleBlacklist' );
 wfLoadExtension( 'VisualEditor' );
-if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
-	$wgGroupPermissions['*']['read'] = true;
-	$wgGroupPermissions['*']['edit'] = true;
-  }
-  
 wfLoadExtension( 'WikiEditor' );
 
 
 # End of automatically generated settings.
 # Add more configuration options below.
+
+wfLoadExtension( 'Bootstrap4');
+$wgTweekiSkinUseBootstrapTheme = false;
+$wgTweekiSkinUseBootstrap4 = true;
+
+//Exibe Vídeos 
+wfLoadExtension( 'EmbedVideo' );
+$wgEmbedVideoAddFileExtensions = true;
+$wgEmbedVideoEnableVideoHandler = true;
+$wgEmbedVideoEnableAudioHandler = true;
+
+
+wfLoadExtension( 'JsonConfig' );
+
+//wfLoadExtension( 'Kartographer' );
+// $wgKartographerWikivoyageMode=false;
+// //Enables Wikivoyage mode.
+// $wgKartographerUseMarkerStyle=false;
+// //Allows Kartographer to extract CSS style to be used by the link from the GeoJSON.
+// $wgKartographerStaticMapframe=false;
+// //Defines if the map will be a static image.
+// $wgKartographerEnableMapFrame=true;
+// $wgKartographerMapServer="https://maps.wikimedia.org";
+
+// $wgKartographerStyles=["osm-intl", "osm"];
+wfLoadExtension( 'HitCounters' );
+
+//-------Timeline ----//
+wfLoadExtension( 'timeline' );
+$wgTimelinePloticusCommand = "/usr/bin/pl"; 
+$wgTimelinePloticusCommand = "/usr/bin/ploticus";
+$wgTimelinePerlCommand = "/usr/bin/perl";
+putenv("GDFONTPATH=/usr/share/fonts/truetype/freefont"); // Directory containing FreeSans.ttf.
+$wgTimelineFontFile = 'ascii'; // Use the internal Ploticus font
+
+//-------End ----//
+$wgVisualEditorSupportedSkins[] = 'tweeki';
