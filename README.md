@@ -8,5 +8,6 @@ Os arquivos que constam nesse github, referem-se a uma pré-definição com a Me
 * Skin : Tweeki ;
 * Bootstrap 4;
 * Composer phar; 
+* Hitcounters
 
 
